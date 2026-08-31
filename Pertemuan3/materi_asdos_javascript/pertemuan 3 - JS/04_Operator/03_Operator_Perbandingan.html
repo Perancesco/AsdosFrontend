@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Penggunaan Operator Perbandingan</title>
+</head>
+
+<body>
+    <h1>Penggunaan Operator Perbandingan</h1>
+    <script>
+        let x = 5;
+        let y = 3;
+        let isEqual = x == y; // Sama dengan
+        let isNotEqual = x != y; // Tidak sama dengan
+        let isStrictEqual = x === '5'; // Sama dengan tipe data
+        let isNotStrictEqual = x !== '5'; // Tidak sama dengan tipe data
+        let isGreater = x > y; // Lebih besar
+        let isLess = x < y; // Lebih kecil
+        let isGreaterOrEqual = x >= y; // Lebih besar atau sama dengan
+        let isLessOrEqual = x <= y; // Lebih kecil atau sama dengan
+        document.write("Apakah x sama dengan y? " + isEqual + "<br>");
+        document.write("Apakah x tidak sama dengan y? " + isNotEqual + "<br>");
+        document.write("Apakah x sama dengan '5' (termasuk tipe data)? " + isStrictEqual +
+            "<br>");
+        document.write("Apakah x tidak sama dengan '5' (termasuk tipe data)? " +
+            isNotStrictEqual + "<br>");
+        document.write("Apakah x lebih besar dari y? " + isGreater + "<br>");
+        document.write("Apakah x lebih kecil dari y? " + isLess + "<br>");
+        document.write("Apakah x lebih besar atau sama dengan y? " + isGreaterOrEqual +
+            "<br>");
+        document.write("Apakah x lebih kecil atau sama dengan y? " + isLessOrEqual + "<br>");
+    </script>
+</body>
+
+</html>
