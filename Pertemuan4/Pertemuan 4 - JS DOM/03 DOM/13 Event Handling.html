@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Handling</title>
+</head>
+<body>
+    <button type="button" id="tombol">Click Me</button>
+    <button type="button" id="tombol2">Click Me Too</button>
+    
+    <script>
+        // Event handling dengan fungsi terpisah
+        function buttonClick() {
+            alert('Button diklik oleh fungsi');
+        }
+        
+        // Event handling dengan fungsi anonim
+        document.getElementById('tombol').addEventListener('click', buttonClick);
+        
+        document.getElementById('tombol2').addEventListener('click', function() {
+            alert('Button kedua diklik');
+        });
+        
+        // Event handling dengan arrow function
+        document.addEventListener('keydown', (event) => {
+            console.log('Tombol keyboard ditekan:', event.key);
+        });
+    </script>
+</body>
+</html>

@@ -28,10 +28,10 @@ let n = 'Belajar Javascript';
 console.log(n.replace('Javascript', 'CSS')); // Output: Belajar CSS
 
 //Memisahkan String → Array
-let kalimat = 'Belajar,Javascript';
+let kalimat = 'Belajar Javascript';
 
 // split() akan memecah string jadi array berdasarkan tanda koma
-let hasilSplit = kalimat.split(',');
+let hasilSplit = kalimat.split('a');
 
 console.log(hasilSplit); // Output: ['Belajar', 'Javascript']
 

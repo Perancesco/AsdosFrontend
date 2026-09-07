@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Manipulasi Elemen</title>
+    <style>
+        .classcontent {
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        // createElement()
+        let div = document.createElement('div');
+        
+        // Menambahkan ID
+        div.id = 'newDiv';
+        
+        // Menambahkan class
+        div.className = 'classcontent';
+        
+        // Menambahkan konten dengan innerHTML
+        div.innerHTML = '<p>Contoh CreateElement dengan innerHTML</p>';
+        
+        // Menambahkan teks dengan createTextNode
+        let text = document.createTextNode('CreateElement menggunakan TextNode');
+        div.appendChild(text);
+        
+        // Menambahkan elemen ke body
+        document.body.appendChild(div);
+        
+        // Membuat elemen button
+        let button = document.createElement('button');
+        button.textContent = 'Klik Saya';
+        button.addEventListener('click', function() {
+            alert('Tombol diklik!');
+        });
+        
+        document.body.appendChild(button);
+    </script>
+</body>
+</html>

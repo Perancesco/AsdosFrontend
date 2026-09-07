@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Akses DOM</title>
+</head>
+<body>
+    <div id="container">
+        <h1>Berbagai Cara Akses Elemen DOM</h1>
+        <p class="text">Paragraf dengan class "text"</p>
+        <p name="description">Paragraf dengan name "description"</p>
+        <ul>
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+        </ul>
+    </div>
+    
+    <script>
+        // Berbagai metode akses elemen DOM
+        document.addEventListener('DOMContentLoaded', function() {
+            console.log('getElementById:', document.getElementById('container'));
+            console.log('getElementsByClassName:', document.getElementsByClassName('text'));
+            console.log('getElementsByName:', document.getElementsByName('description'));
+            console.log('getElementsByTagName:', document.getElementsByTagName('li'));
+            console.log('querySelector:', document.querySelector('h1'));
+            console.log('querySelectorAll:', document.querySelectorAll('li'));
+        });
+    </script>
+</body>
+</html>

@@ -1,6 +1,6 @@
 //Karakter Escape
 // \n → baris baru
-let teksBarisBaru = 'Halo,\nSelamat datang!';
+let teksBarisBaru = 'Halo,\nSelamat datang!hjgggggggggggg\nhgjhhjgjjjjjjjjjjjjj';
 console.log(teksBarisBaru);
 
 // \t → tab

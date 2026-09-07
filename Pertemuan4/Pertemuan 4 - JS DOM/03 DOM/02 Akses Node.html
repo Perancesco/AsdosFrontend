@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Akses Node DOM</title>
+</head>
+<body>
+    <div id="container">
+        <h1>Judul Halaman</h1>
+        <p class="paragraf">Ini adalah paragraf pertama.</p>
+        <p class="paragraf">Ini adalah paragraf kedua.</p>
+        <ul id="list">
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+        </ul>
+    </div>
+    
+    <script>
+        // Akses node setelah halaman dimuat
+        document.addEventListener('DOMContentLoaded', function() {
+            console.log("Halaman telah dimuat sepenuhnya");
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Akses Lintas Node</title>
+</head>
+<body>
+    <div id="main">
+        <p class="note">This is a note!</p>
+    </div>
+    
+    <ul id="menu">
+        <li class="first">Home</li>
+        <li>Products</li>
+        <li class="current">Customer Support</li>
+        <li>Careers</li>
+        <li>Investors</li>
+        <li>News</li>
+        <li class="last">About Us</li>
+    </ul>
+    
+    <script>
+        // parentNode
+        let note = document.querySelector('.note');
+        console.log('Parent node:', note.parentNode.id); // main
+        
+        // childNodes, firstChild, lastChild
+        let menu = document.getElementById('menu');
+        console.log('First child:', menu.firstChild); // #text (whitespace)
+        console.log('First element child:', menu.firstElementChild.textContent); // Home
+        console.log('Last child:', menu.lastChild); // #text (whitespace)
+        console.log('Last element child:', menu.lastElementChild.textContent); // About Us
+        
+        // childNodes vs children
+        console.log('All child nodes:', menu.childNodes); // NodeList termasuk text nodes
+        console.log('Element children only:', menu.children); // HTMLCollection hanya element nodes
+    </script>
+</body>
+</html>

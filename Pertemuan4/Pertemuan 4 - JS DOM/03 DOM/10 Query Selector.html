@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>querySelector Demo</title>
+    <style>
+        .highlight {
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div id="logo">
+            <img src="#" alt="Logo" id="logoImg">
+        </div>
+        <nav class="primary-nav">
+            <ul>
+                <li class="menu-item current"><a href="#home">Home</a></li>
+                <li class="menu-item"><a href="#services" target="_blank">Services</a></li>
+                <li class="menu-item"><a href="#about">About</a></li>
+                <li class="menu-item"><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Welcome to the JS Dev Agency</h1>
+        <div class="container">
+            <section class="section-a">
+                <h2>UI/UX</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                <button>Read More</button>
+            </section>
+            <section class="section-b">
+                <h2>PWA Development</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                <button>Read More</button>
+            </section>
+            <section class="section-c">
+                <h2>Mobile App Dev</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <button>Read More</button>
+            </section>
+        </div>
+    </main>
+    <br>
+    
+    <button onclick="myUniversal()">Universal Selector</button>
+    <button onclick="myType()">Type Selector</button>
+    <button onclick="myClass()">Class Selector</button>
+    <button onclick="myId()">Id Selector</button>
+    <button onclick="myAttribute()">Attribute Selector</button>
+    <button onclick="myGroup()">Group Selector</button>
+    
+    <script>
+        function myUniversal() {
+            document.querySelector('*').style.backgroundColor = 'red';
+        }
+        
+        function myType() {
+            document.querySelector('h1').style.backgroundColor = 'blue';
+        }
+        
+        function myClass() {
+            document.querySelector('.container').style.backgroundColor = 'yellow';
+        }
+        
+        function myId() {
+            document.querySelector('#logo').style.backgroundColor = 'green';
+        }
+        
+        function myAttribute() {
+            document.querySelector('a[target]').style.backgroundColor = 'orange';
+        }
+        
+        function myGroup() {
+            const elements = document.querySelectorAll('h1, h2');
+            elements.forEach(el => {
+                el.style.backgroundColor = 'purple';
+                el.style.color = 'white';
+            });
+        }
+    </script>
+</body>
+</html>
