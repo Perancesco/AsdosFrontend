@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Catalogue</title>
+</head>
+
+<body>
+
+    <h1>Movie Catalogue</h1>
+
+    <form id="searchForm">
+
+        <label for="title">
+            Search by movie title
+        </label>
+
+        <br><br>
+
+        <input
+            type="text"
+            id="title"
+            required
+        >
+
+        <button
+            type="submit"
+            id="searchButton"
+        >
+            Search
+        </button>
+
+        <p id="error"></p>
+
+    </form>
+
+    <hr>
+
+    <table id="result">
+
+        <tbody>
+
+            <tr>
+
+                <td>
+                    #1
+                </td>
+
+                <td>
+
+                    <img
+                        src="https://image.tmdb.org/t/p/w500/pB8BM7pdSp6B6Ih7QZ4DrQ3PmJK.jpg"
+                        height="200"
+                    >
+
+                </td>
+
+                <td>
+
+                    <h2>
+                        Fight Club
+                    </h2>
+
+                    <p>
+                        A ticking-time-bomb insomniac and a slippery soap salesman
+                        channel primal male aggression into a shocking new form of therapy.
+                    </p>
+
+                    <p>
+                        Rating: 4.5
+                    </p>
+
+                    <p>
+                        Genre: Drama, Comedy
+                    </p>
+
+                </td>
+
+            </tr>
+
+        </tbody>
+
+    </table>
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+    <!-- JavaScript kita -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>

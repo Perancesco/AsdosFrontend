@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Catalogue</title><!-- Judul yang tampil di tab browser -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+     <!-- Menghubungkan file CSS Bootstrap versi 4.5.2 -->
+</head>
+<body>
+    <div class="container-fluid my-3 px-4"> <!-- Container Bootstrap full-width, dengan margin-y=3 dan padding-x=4 -->
+        <h1>Movie Catalogue</h1><!-- Judul utama halaman -->
+
+        <!-- Form pencarian film -->
+        <form id="searchForm" class="form border p-3"> <!-- Form dengan ID "searchForm", memakai class form, border, dan padding -->
+            <div class="form-group"><!-- Grup elemen form (Bootstrap) -->
+                <label for="title">Search by movie title</label> <!-- Label untuk input pencarian -->
+                <input type="text" class="form-control" id="title" aria-describedby="error" required>
+                <!-- Input teks untuk judul film, dengan class form-control, ID "title", dan atribut required -->
+                <small class="form-text text-danger" id="error"></small> <!-- Elemen kecil untuk menampilkan pesan error -->
+            </div>
+            <button type="submit" class="btn btn-primary" id="searchButton">  <!-- Tombol submit dengan gaya Bootstrap primary -->
+                Search
+            </button>
+        </form>
+
+        <!-- Tabel hasil pencarian -->
+        <table class="table" id="result"> <!-- Tabel Bootstrap dengan ID "result" -->
+            <tbody>
+                <tr><!-- Baris pertama tabel -->
+                    <td width="10"><h2 class="display-5">#1</h2></td> 
+                    <!-- membuat sebuah tabel kecil (10px) yang menampilkan nomor urut “#1” 
+                     dalam heading(h2) dengan tampilan khusus dari Bootstrap (display-5) -->
+                    <td width="100">
+                        <!-- Poster film (gambar) -->
+                        <img src="https://image.tmdb.org/t/p/w500/pB8BM7pdSp6B6Ih7QZ4DrQ3PmJK.jpg" height="200">
+                    </td>
+                    <td> 
+                        <h2 class="display-5">Fight Club</h2>  <!-- Judul film -->
+                        <!-- Deskripsi singkat film -->
+                        <p>A ticking-time-bomb insomniac and a slippery soap salesman channel primal male aggression into a shocking new form of therapy. Their concept catches on, with underground "fight clubs" forming in every town, until an eccentric gets in the way and ignites an out-of-control spiral toward oblivion.</p>
+                        <!-- Rating film (dalam bentuk badge hijau sukses) -->
+                        <span class="badge badge-success p-2">Rating: 4.5</span>
+                        <!-- Genre film (dalam bentuk badge kuning warning) -->
+                        <span class="badge badge-warning ml-2 p-2">Drama</span> 
+                        <span class="badge badge-warning ml-2 p-2">Comedy</span> 
+                    </td>
+                </tr> 
+            </tbody>
+        </table>
+    </div>
+
+     <!-- Import library JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script> <!-- jQuery: untuk manipulasi DOM dan AJAX -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script> <!-- Popper.js: dipakai Bootstrap untuk tooltip dan dropdown -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> <!-- Bootstrap JS -->
+    <script src="script.js"></script> <!-- File JavaScript buatan sendiri untuk mengatur logika pencarian -->
+</body>
+
+</html>     
