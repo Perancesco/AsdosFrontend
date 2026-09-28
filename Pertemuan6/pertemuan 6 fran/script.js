@@ -40,8 +40,10 @@ $('#searchForm').submit(function(e) {
                 $('#result').append(`
                     <tr>
                         <td>
+                            ${movie.poster_path ? `<img src="https://image.tmdb.org/t/p/w200${movie.poster_path}" alt="${movie.title}">` : 'No image available'}
                             <h4>${movie.title}</h4>
                             <p>${movie.overview}</p>
+                            <p> Release date:${movie.release_date}</p>
                             <span class="badge badge-success">
                                 Rating: ${movie.vote_average}
                             </span>

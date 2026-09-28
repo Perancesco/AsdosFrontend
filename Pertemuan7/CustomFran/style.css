@@ -1,0 +1,88 @@
+/* ============================= */
+/* CUSTOM CSS */
+/* ============================= */
+
+/*
+    CSS ini bukan bagian dari Bootstrap.
+
+    Digunakan hanya untuk beberapa
+    penyesuaian tampilan tambahan.
+*/
+
+
+body {
+
+    background-color: white;
+
+}
+
+
+/* ============================= */
+/* HERO */
+/* ============================= */
+
+.hero-section {
+
+    padding-top: 80px;
+
+    padding-bottom: 80px;
+
+}
+
+
+.tomato-image {
+
+    max-width: 450px;
+
+}
+
+
+/* ============================= */
+/* GRID EXAMPLE */
+/* ============================= */
+
+.grid-box {
+
+    background-color: #0d6efd;
+
+    color: white;
+
+    padding: 30px;
+
+    text-align: center;
+
+    border-radius: 8px;
+
+}
+
+
+/* ============================= */
+/* PROGRESS WIDTH */
+/* ============================= */
+
+.width-25 {
+
+    width: 25%;
+
+}
+
+
+.width-50 {
+
+    width: 50%;
+
+}
+
+
+.width-75 {
+
+    width: 75%;
+
+}
+
+
+.width-100 {
+
+    width: 100%;
+
+}

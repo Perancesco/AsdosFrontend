@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Belajar Bootstrap 5</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="bootstrap.min.css">
+
+    <!-- CSS Buatan Sendiri -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body>
+
+    <!-- ================================= -->
+    <!-- NAVBAR -->
+    <!-- ================================= -->
+
+    <nav class="navbar bg-dark">
+
+        <div class="container">
+
+            <a class="navbar-brand text-white fw-bold" href="#">
+                Bootstrap Class
+            </a>
+
+            <div>
+
+                <a href="#home"
+                   class="text-white text-decoration-none me-3">
+                    Home
+                </a>
+
+                <a href="#grid"
+                   class="text-white text-decoration-none me-3">
+                    Grid
+                </a>
+
+                <a href="#component"
+                   class="text-white text-decoration-none">
+                    Component
+                </a>
+
+            </div>
+
+        </div>
+
+    </nav>
+
+
+
+    <!-- ================================= -->
+    <!-- HERO -->
+    <!-- ================================= -->
+
+    <section id="home" class="hero-section">
+
+        <div class="container">
+
+            <div class="row align-items-center">
+
+                <!-- Kolom Kiri -->
+
+                <div class="col-md-6">
+
+                    <span class="badge bg-danger mb-3">
+                        Bootstrap 5
+                    </span>
+
+                    <h1 class="display-4 fw-bold">
+
+                        Belajar
+
+                        <span class="text-danger">
+                            Bootstrap
+                        </span>
+
+                    </h1>
+
+
+                    <p class="lead text-secondary">
+
+                        Bootstrap membantu kita membuat
+                        tampilan website dengan lebih cepat
+                        menggunakan class yang sudah tersedia.
+
+                    </p>
+
+
+                    <a href="#grid"
+                       class="btn btn-danger btn-lg">
+
+                        Mulai Belajar
+
+                    </a>
+
+                </div>
+
+
+
+                <!-- Kolom Kanan -->
+
+                <div class="col-md-6 text-center">
+
+                    <img src="tomat.png"
+                         alt="Tomat"
+                         class="img-fluid tomato-image">
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ================================= -->
+    <!-- CONTAINER -->
+    <!-- ================================= -->
+
+    <section class="py-5 bg-light">
+
+        <div class="container">
+
+            <h2 class="fw-bold">
+                1. Container
+            </h2>
+
+            <p>
+                Container digunakan untuk membungkus
+                isi halaman.
+            </p>
+
+
+            <div class="bg-primary text-white p-4">
+
+                Ini berada di dalam
+
+                <strong>
+                    .container
+                </strong>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ================================= -->
+    <!-- GRID -->
+    <!-- ================================= -->
+
+    <section id="grid" class="py-5">
+
+        <div class="container">
+
+            <h2 class="fw-bold">
+                2. Grid System
+            </h2>
+
+
+            <p>
+
+                Bootstrap menggunakan sistem
+
+                <strong>
+                    12 kolom.
+                </strong>
+
+            </p>
+
+
+            <div class="row g-3">
+
+
+                <div class="col-md-4">
+
+                    <div class="grid-box">
+
+                        col-md-4
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-md-4">
+
+                    <div class="grid-box">
+
+                        col-md-4
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-md-4">
+
+                    <div class="grid-box">
+
+                        col-md-4
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ================================= -->
+    <!-- BUTTON -->
+    <!-- ================================= -->
+
+    <section class="py-5 bg-light">
+
+        <div class="container">
+
+            <h2 class="fw-bold">
+                3. Button
+            </h2>
+
+
+            <p>
+
+                Bootstrap menyediakan berbagai
+                warna tombol.
+
+            </p>
+
+
+            <button class="btn btn-primary">
+                Primary
+            </button>
+
+
+            <button class="btn btn-success">
+                Success
+            </button>
+
+
+            <button class="btn btn-danger">
+                Danger
+            </button>
+
+
+            <button class="btn btn-warning">
+                Warning
+            </button>
+
+
+            <button class="btn btn-dark">
+                Dark
+            </button>
+
+
+            <hr>
+
+
+            <h4>
+                Outline Button
+            </h4>
+
+
+            <button class="btn btn-outline-primary">
+                Primary
+            </button>
+
+
+            <button class="btn btn-outline-success">
+                Success
+            </button>
+
+
+            <button class="btn btn-outline-danger">
+                Danger
+            </button>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ================================= -->
+    <!-- CARD -->
+    <!-- ================================= -->
+
+    <section id="component" class="py-5">
+
+        <div class="container">
+
+            <h2 class="fw-bold">
+                4. Card
+            </h2>
+
+
+            <div class="row">
+
+
+                <div class="col-md-4">
+
+
+                    <div class="card">
+
+
+                        <img src="tomat.png"
+                             class="card-img-top"
+                             alt="Tomat">
+
+
+                        <div class="card-body">
+
+
+                            <h5 class="card-title">
+
+                                Fresh Tomato
+
+                            </h5>
+
+
+                            <p class="card-text">
+
+                                Ini merupakan contoh
+                                penggunaan komponen Card
+                                pada Bootstrap.
+
+                            </p>
+
+
+                            <a href="#"
+                               class="btn btn-danger">
+
+                                Detail
+
+                            </a>
+
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ================================= -->
+    <!-- ALERT -->
+    <!-- ================================= -->
+
+    <section class="py-5 bg-light">
+
+        <div class="container">
+
+            <h2 class="fw-bold">
+                5. Alert
+            </h2>
+
+
+            <div class="alert alert-primary">
+
+                Ini adalah Primary Alert.
+
+            </div>
+
+
+            <div class="alert alert-success">
+
+                Ini adalah Success Alert.
+
+            </div>
+
+
+            <div class="alert alert-danger">
+
+                Ini adalah Danger Alert.
+
+            </div>
+
+
+            <div class="alert alert-warning">
+
+                Ini adalah Warning Alert.
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ================================= -->
+    <!-- BADGE -->
+    <!-- ================================= -->
+
+    <section class="py-5">
+
+        <div class="container">
+
+            <h2 class="fw-bold">
+                6. Badge
+            </h2>
+
+
+            <span class="badge bg-primary">
+                Primary
+            </span>
+
+
+            <span class="badge bg-success">
+                Success
+            </span>
+
+
+            <span class="badge bg-danger">
+                Danger
+            </span>
+
+
+            <span class="badge bg-warning text-dark">
+                Warning
+            </span>
+
+
+            <span class="badge bg-dark">
+                Dark
+            </span>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ================================= -->
+    <!-- PROGRESS BAR -->
+    <!-- ================================= -->
+
+    <section class="py-5 bg-light">
+
+        <div class="container">
+
+            <h2 class="fw-bold">
+                7. Progress Bar
+            </h2>
+
+
+            <p>
+                25%
+            </p>
+
+
+            <div class="progress mb-4">
+
+                <div class="progress-bar bg-success width-25">
+
+                    25%
+
+                </div>
+
+            </div>
+
+
+            <p>
+                50%
+            </p>
+
+
+            <div class="progress mb-4">
+
+                <div class="progress-bar bg-info width-50">
+
+                    50%
+
+                </div>
+
+            </div>
+
+
+            <p>
+                75%
+            </p>
+
+
+            <div class="progress mb-4">
+
+                <div class="progress-bar bg-warning text-dark width-75">
+
+                    75%
+
+                </div>
+
+            </div>
+
+
+            <p>
+                100%
+            </p>
+
+
+            <div class="progress">
+
+                <div class="progress-bar bg-danger width-100">
+
+                    100%
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ================================= -->
+    <!-- FORM -->
+    <!-- ================================= -->
+
+    <section class="py-5">
+
+        <div class="container">
+
+            <h2 class="fw-bold">
+                8. Form
+            </h2>
+
+
+            <div class="row">
+
+                <div class="col-md-6">
+
+
+                    <form>
+
+
+                        <div class="mb-3">
+
+                            <label class="form-label">
+
+                                Nama
+
+                            </label>
+
+
+                            <input type="text"
+                                   class="form-control"
+                                   placeholder="Masukkan nama">
+
+                        </div>
+
+
+
+                        <div class="mb-3">
+
+                            <label class="form-label">
+
+                                Email
+
+                            </label>
+
+
+                            <input type="email"
+                                   class="form-control"
+                                   placeholder="Masukkan email">
+
+                        </div>
+
+
+
+                        <div class="mb-3">
+
+                            <label class="form-label">
+
+                                Pesan
+
+                            </label>
+
+
+                            <textarea class="form-control"
+                                      rows="4"></textarea>
+
+                        </div>
+
+
+
+                        <button type="button"
+                                class="btn btn-primary">
+
+                            Submit
+
+                        </button>
+
+
+                    </form>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ================================= -->
+    <!-- FOOTER -->
+    <!-- ================================= -->
+
+    <footer class="bg-dark text-white text-center py-4">
+
+        <p class="mb-0">
+
+            Bootstrap 5 Learning Material
+
+        </p>
+
+    </footer>
+
+
+</body>
+
+</html>

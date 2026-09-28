@@ -1,0 +1,317 @@
+<!-- struktur dasar html dengan menggunakan bootstrap 5 -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+    <link href="bootstrap.min.css" rel="stylesheet" />
+    <script src="bootstrap.min.js"></script>
+  </head>
+  <body>
+    <!-- navbar pada bootstrap -->
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Features</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Pricing</a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link disabled"
+                href="#"
+                tabindex="-1"
+                aria-disabled="true"
+                >Disabled</a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container mt-5">
+      <h1>Hello, world!</h1>
+      <p>This is a simple Bootstrap 5 template.</p>
+    </main>
+
+<hr>
+
+    <div class="container">
+      <h1>Grid</h1>
+      <div class="row">
+        <div class="col-12 col-md-8">Column 1</div>
+        <div class="col-6 col-md-4">Column 2</div>
+      </div>
+      <div class="row">
+        <div class="col-6 col-md-4">Column 3</div>
+        <div class="col-6 col-md-4">Column 4</div>
+        <div class="col-6 col-md-4">Column 5</div>
+      </div>
+    </div>
+
+<hr>
+<br>
+
+    <!-- Button pada Bootstrap -->
+    <div class="container">
+    <h1>Button</h1>
+      <button type="button" class="btn btn-primary">Primary</button>
+      <button type="button" class="btn btn-secondary">Secondary</button>
+      <button type="button" class="btn btn-success">Success</button>
+      <button type="button" class="btn btn-danger">Danger</button>
+      <button type="button" class="btn btn-warning">Warning</button>
+      <button type="button" class="btn btn-info">Info</button>
+      <button type="button" class="btn btn-light">Light</button>
+      <button type="button" class="btn btn-dark">Dark</button>
+
+      <button type="button" class="btn btn-outline-primary">Primary</button>
+      <button type="button" class="btn btn-outline-secondary">Secondary</button>
+      <button type="button" class="btn btn-outline-success">Success</button>
+      <button type="button" class="btn btn-outline-danger">Danger</button>
+      <button type="button" class="btn btn-outline-warning">Warning</button>
+      <button type="button" class="btn btn-outline-info">Info</button>
+      <button type="button" class="btn btn-outline-light">Light</button>
+      <button type="button" class="btn btn-outline-dark">Dark</button>
+    </div>
+
+<hr>
+<br>
+    <!-- Form pada Bootstrap -->
+
+    <div class="container">
+        <h1>Form</h1>
+      <form>
+        <!-- Input Email -->
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label"
+            >Email address</label
+          >
+          <!-- Input field untuk email -->
+          <input
+            type="email"
+            class="form-control"
+            id="exampleInputEmail1"
+            aria-describedby="emailHelp"
+          />
+          <!-- Teks bantuan untuk email -->
+          <div id="emailHelp" class="form-text">
+            We'll never share your email with anyone else.
+          </div>
+        </div>
+
+        <!-- Input Password -->
+        <div class="mb-3">
+          <label for="exampleInputPassword1" class="form-label">Password</label>
+          <!-- Input field untuk password -->
+          <input
+            type="password"
+            class="form-control"
+            id="exampleInputPassword1"
+          />
+        </div>
+
+        <!-- Checkbox -->
+        <div class="mb-3 form-check">
+          <!-- Input checkbox -->
+          <input type="checkbox" class="form-check-input" id="exampleCheck1" />
+          <!-- Label checkbox -->
+          <label class="form-check-label" for="exampleCheck1"
+            >Check me out</label
+          >
+        </div>
+
+        <!-- Tombol Submit -->
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+    </div>
+
+<hr>
+<br>
+
+    <div class="container">
+        <h1>Card</h1>
+      <!-- Card wrapper dengan lebar 18rem -->
+      <div class="card" style="width: 18rem">
+        <!-- Gambar di bagian atas card -->
+        <img src="tomat.png" class="card-img-top" alt="..." />
+
+        <!-- Bagian isi card -->
+        <div class="card-body">
+          <!-- Judul card -->
+          <h5 class="card-title">Card title</h5>
+
+          <!-- Teks/deskripsi card -->
+          <p class="card-text">
+            Some quick example text to build on the card title and make up the
+            bulk of the card's content.
+          </p>
+
+          <!-- Tombol (link dengan style button Bootstrap) -->
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
+    </div>
+
+<hr>
+<br>
+<div class="container">
+    <h1>Modal Pop-up</h1>
+
+    <!-- Button trigger modal -->
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+        Launch demo modal
+    </button>
+    
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <!-- Header modal -->
+                <div class="modal-header">
+                    <!-- Judul modal -->
+                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                    <!-- Tombol close (X) -->
+                    <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                    ></button>
+                </div>
+                
+                <!-- Body modal -->
+                <div class="modal-body">...</div>
+                
+                <!-- Footer modal -->
+                <div class="modal-footer">
+                    <!-- Tombol close -->
+                    <button
+                    type="button"
+                    class="btn btn-secondary"
+                    data-bs-dismiss="modal"
+                    >
+                    Close
+                </button>
+                <!-- Tombol aksi (misalnya Save changes) -->
+                <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+</div>
+<hr>
+<br>
+<div class="container">
+    <h1>Alert</h1>
+
+    <!-- Alert warna primary (biru) -->
+    <div class="alert alert-primary" role="alert">
+        A simple primary alert—check it out!
+    </div>
+
+    <!-- Alert warna secondary (abu-abu) -->
+    <div class="alert alert-secondary" role="alert">
+        A simple secondary alert—check it out!
+    </div>
+
+    <!-- Alert warna success (hijau) -->
+    <div class="alert alert-success" role="alert">
+        A simple success alert—check it out!
+    </div>
+
+    <!-- Alert warna danger (merah) -->
+    <div class="alert alert-danger" role="alert">
+        A simple danger alert—check it out!
+    </div>
+
+    <!-- Alert warna warning (kuning) -->
+    <div class="alert alert-warning" role="alert">
+        A simple warning alert—check it out!
+    </div>
+
+    <!-- Alert warna info (biru muda) -->
+    <div class="alert alert-info" role="alert">
+        A simple info alert—check it out!
+    </div>
+
+    <!-- Alert warna light (putih keabu-abuan) -->
+    <div class="alert alert-light" role="alert">
+        A simple light alert—check it out!
+    </div>
+
+    <!-- Alert warna dark (abu-abu gelap) -->
+    <div class="alert alert-dark" role="alert">
+        A simple dark alert—check it out!
+    </div>
+
+<hr>
+<br>
+<h1>Badges</h1>
+
+    <!-- Badge warna primary (biru) -->
+    <span class="badge text-bg-primary">Primary</span>
+
+    <!-- Badge warna secondary (abu-abu) -->
+    <span class="badge text-bg-secondary">Secondary</span>
+
+    <!-- Badge warna success (hijau) -->
+    <span class="badge text-bg-success">Success</span>
+
+    <!-- Badge warna danger (merah) -->
+    <span class="badge text-bg-danger">Danger</span>
+
+    <!-- Badge warna warning (kuning) -->
+    <span class="badge text-bg-warning">Warning</span>
+
+    <!-- Badge warna info (biru muda) -->
+    <span class="badge text-bg-info">Info</span>
+
+    <!-- Badge warna light (putih terang) -->
+    <span class="badge text-bg-light">Light</span>
+
+    <!-- Badge warna dark (abu-abu gelap) -->
+    <span class="badge text-bg-dark">Dark</span>
+
+<hr>
+<br>
+<h1>Progress Bar</h1>
+    <!-- Progress bar sukses (hijau, 25%) -->
+    <div class="progress" role="progressbar" aria-label="Success example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+        <div class="progress-bar bg-success" style="width: 25%">25%</div>   
+    </div>
+
+    <!-- Progress bar info (biru muda, 50%) -->
+    <div class="progress" role="progressbar" aria-label="Info example" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+        <div class="progress-bar bg-info text-dark" style="width: 50%">50%</div>
+    </div>
+
+    <!-- Progress bar warning (kuning, 75%) -->
+    <div class="progress" role="progressbar" aria-label="Warning example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+        <div class="progress-bar bg-warning text-dark" style="width: 75%">75%</div>
+    </div>
+
+    <!-- Progress bar danger (merah, 100%) -->
+    <div class="progress" role="progressbar" aria-label="Danger example" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+        <div class="progress-bar bg-danger" style="width: 100%">100%</div>
+    </div>
+
+
+    <footer class="bg-light text-center py-3 mt-auto">
+      &copy; 2024 My Website
+    </footer>
+
+  </body>
+</html>
