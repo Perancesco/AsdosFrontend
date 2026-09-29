@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulir Wisata - Jelajah Indonesia</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <div class="navbar">
+    <a class="brand" href="index.html">JELAJAH INDONESIA</a>
+    <nav aria-label="Navigasi utama">
+      <a href="index.html">Beranda</a>
+      <a href="form.html">Formulir</a>
+      <details class="dropdown">
+        <summary>Menu ▾</summary>
+        <div class="dropdown-menu">
+          <a href="index.html#destinasi">Destinasi</a>
+          <a href="index.html#media">Multimedia</a>
+          <a href="form.html">Formulir</a>
+        </div>
+      </details>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <span class="badge">HALAMAN 2</span>
+    <h1>Formulir Rencana Wisata</h1>
+    <p>Lengkapi data berikut untuk memberikan rekomendasi perjalanan yang sesuai.</p>
+  </section>
+
+  <form onsubmit="alert('Data berhasil dikirim!'); return false;">
+    <div class="form-group">
+      <label for="nama">Nama Lengkap</label>
+      <input type="text" id="nama" name="nama" placeholder="Masukkan nama lengkap" required>
+    </div>
+
+    <div class="form-group">
+      <label>Jenis Perjalanan</label>
+      <div class="inline-options">
+        <label><input type="radio" name="jenis" value="sendiri" required> Sendiri</label>
+        <label><input type="radio" name="jenis" value="keluarga"> Keluarga</label>
+        <label><input type="radio" name="jenis" value="teman"> Bersama teman</label>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="destinasi">Pilih Destinasi</label>
+      <select id="destinasi" name="destinasi" required>
+        <option value="">-- Pilih destinasi --</option>
+        <option value="bali">Bali</option>
+        <option value="yogyakarta">Yogyakarta</option>
+        <option value="raja-ampat">Raja Ampat</option>
+        <option value="lombok">Lombok</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label for="tanggal">Tanggal Keberangkatan</label>
+      <input type="date" id="tanggal" name="tanggal" required>
+    </div>
+
+    <div class="form-group">
+      <label for="pesan">Catatan / Keinginan Perjalanan</label>
+      <textarea id="pesan" name="pesan" rows="6" placeholder="Contoh: Saya ingin wisata alam dan kuliner..."></textarea>
+    </div>
+
+    <button type="submit">Kirim Formulir</button>
+    <a href="index.html" style="margin-left:12px;">Kembali ke Beranda</a>
+  </form>
+
+  <section class="section notice">
+    <strong>Form HTML lengkap:</strong> menggunakan input text, pilihan radio, select, textarea, dan submit.
+  </section>
+</main>
+
+<footer>
+  <div class="footer-inner">
+    <div><strong>Jelajah Indonesia</strong><br>Website tugas HTML & CSS.</div>
+    <div><a href="index.html">Beranda</a> · <a href="form.html">Formulir</a></div>
+  </div>
+</footer>
+</body>
+</html>

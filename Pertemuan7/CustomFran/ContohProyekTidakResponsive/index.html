@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jelajah Indonesia - Beranda</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <div class="navbar">
+    <a class="brand" href="index.html">JELAJAH INDONESIA</a>
+    <nav aria-label="Navigasi utama">
+      <a href="index.html">Beranda</a>
+      <a href="form.html">Formulir</a>
+      <details class="dropdown">
+        <summary>Destinasi ▾</summary>
+        <div class="dropdown-menu">
+          <a href="#destinasi">Destinasi Populer</a>
+          <a href="#media">Multimedia</a>
+          <a href="form.html">Isi Formulir</a>
+        </div>
+      </details>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <span class="badge">MATERI 6.6 — WAJIB PROYEK</span>
+    <h1>Jelajah Keindahan Indonesia</h1>
+    <p>Website sederhana bertema wisata Indonesia yang memenuhi ketentuan teknis proyek HTML: dua halaman saling terhubung, tabel, formulir lengkap, multimedia, navigasi dropdown, dan CSS eksternal.</p>
+    <a href="form.html"><button type="button">Isi Formulir Wisata</button></a>
+  </section>
+
+  <section id="destinasi" class="section">
+    <h2>Destinasi Populer</h2>
+    <div class="grid">
+      <article class="card">
+        <div class="card-icon">01</div>
+        <h3>Bali</h3>
+        <p>Pantai, budaya, kuliner, dan suasana tropis yang menjadi daya tarik wisatawan.</p>
+      </article>
+      <article class="card">
+        <div class="card-icon">02</div>
+        <h3>Yogyakarta</h3>
+        <p>Kota budaya dengan candi, keraton, kuliner khas, dan banyak tempat bersejarah.</p>
+      </article>
+      <article class="card">
+        <div class="card-icon">03</div>
+        <h3>Raja Ampat</h3>
+        <p>Kepulauan dengan panorama laut dan kehidupan bawah air yang menarik untuk dieksplorasi.</p>
+      </article>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>Jadwal Contoh Perjalanan</h2>
+    <table>
+      <thead>
+        <tr><th>Hari</th><th>Lokasi</th><th>Kegiatan</th><th>Durasi</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Hari 1</td><td>Bali</td><td>Eksplorasi pantai</td><td>6 jam</td></tr>
+        <tr><td>Hari 2</td><td>Ubud</td><td>Wisata budaya & kuliner</td><td>8 jam</td></tr>
+        <tr><td>Hari 3</td><td>Tanah Lot</td><td>Menikmati matahari terbenam</td><td>4 jam</td></tr>
+        <tr><td>Hari 4</td><td>Sanur</td><td>Aktivitas pantai</td><td>5 jam</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section class="section">
+    <h2>Galeri</h2>
+    <div class="gallery">
+      <figure>
+        <img src="https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=900&q=80" alt="Pemandangan pura di Bali">
+        <figcaption>Bali — Budaya dan alam</figcaption>
+      </figure>
+      <figure>
+        <img src="https://images.unsplash.com/photo-1564507592333-c60657eea523?auto=format&fit=crop&w=900&q=80" alt="Pemandangan destinasi wisata Indonesia">
+        <figcaption>Pesona Nusantara</figcaption>
+      </figure>
+      <figure>
+        <img src="https://images.unsplash.com/photo-1516690561799-46d8f74f9abf?auto=format&fit=crop&w=900&q=80" alt="Pemandangan pantai tropis">
+        <figcaption>Pantai tropis</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section id="media" class="section">
+    <h2>Multimedia</h2>
+    <div class="media-grid">
+      <div class="media-box">
+        <h3>Video Wisata Indonesia</h3>
+        <iframe src="https://www.youtube.com/embed/Scxs7L0vhZ4" title="Video wisata Indonesia" allowfullscreen></iframe>
+      </div>
+      <div class="media-box">
+        <h3>Peta Lokasi Bali</h3>
+        <iframe src="https://www.google.com/maps?q=Bali,Indonesia&output=embed" title="Peta Bali"></iframe>
+      </div>
+    </div>
+  </section>
+
+  <section class="section notice">
+    <strong>Catatan proyek:</strong> halaman ini terhubung dengan <a href="form.html">halaman Formulir</a>. Semua styling berada di file <code>style.css</code> sebagai CSS eksternal.
+  </section>
+</main>
+
+<footer>
+  <div class="footer-inner">
+    <div><strong>Jelajah Indonesia</strong><br>Website tugas HTML & CSS.</div>
+    <div><a href="index.html">Beranda</a> · <a href="form.html">Formulir</a></div>
+  </div>
+</footer>
+</body>
+</html>
